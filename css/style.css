@@ -1,3 +1,89 @@
+
+/**************
+/** BASICS ****
+/**************
+
+   // IDs override class and tag styles, 
+   // IDs are the most specific selector in CSS, followed by classes, and finally, tags
+   // To make styles easy to edit, it's best to style with a tag selector, then class,then ID
+   // Rule: specific selectors overrule general selectors
+   // !import overrules everything
+
+/**************
+/** COLORS ****
+/**************
+
+/* Options for setting colors
+    // HSLA is the most semantic system of setting colors, gives more control
+    // In HSLA, tints and shades are determined by the third number, which is L for lightness.
+    // https://www.december.com/html/spec/colorhsl.html
+    // use the Color Wheel
+    */
+
+/* When deciding which colors to use in your design, there are four different color schemes to consider:
+    // Monochromatic: utilizes a single color with varying shades and tints
+        // provide an organized impression 
+    // Complementary: opposite from each other on the color wheel 
+        // can draw attention to certain elements on the page
+    // Analogous: Typically, there is one dominant, a second to support, and a third to accent the color palette. 
+        // create a visually pleasing and calming display.
+    // Consist of three colors that are equidistant from each other on the color wheel.
+        // create a sense of equality, vibrancy, and security in your designs. 
+ */
+
+
 body {
-    background-color:pink;
+    background-color: #fdfdfd;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+  }
+  section {
+    width: 100%;
+    display: block;
+    height: 18vh;
+    padding: 1vh;
+    font-size: 22px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+  }
+  
+  .first-color {
+    background-color: hsla(111, 100%, 50%, 1);
+    width: 100%;
+    height: 100px;
+  }
+  .second-color {
+    background-color: hsla(15, 100%, 50%, 1);
+    width: 100%;
+    height: 100px;  
+}
+  .third-color {
+    background-color: hsla(30, 100%, 50%, 1);
+    width: 100%;
+    height: 100px;  
+}
+  .fourth-color {
+    background-color: hsla(45, 100%, 50%, 1);
+    width: 100%;
+    height: 100px;  
+}
+  .fifth-color {
+    background-color: hsla(60, 100%, 50%, 1);
+    width: 100%;
+    height: 100px;  
+}
+  
+ 
+h1 {
+    color: Yellow; /*Keyword */
+}
+h2 {
+    color: #8FBC8F; /* Hex Code */
+}
+h3 {
+    color: rgb(23, 45, 23); /* RGB*/
+}
+p {
+    color: hsla(34, 100%, 100%, 0.1); /* HSLA*/
 }

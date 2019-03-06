@@ -32,7 +32,7 @@
  */
 
 
-body {
+/* body {
     background-color: #fdfdfd;
     margin:0;
     padding: 0;
@@ -87,3 +87,38 @@ h3 {
 p {
     color: hsla(34, 100%, 100%, 0.1); /* HSLA*/
 }
+ */
+
+/**************
+/**** SASS ****
+/**************
+
+// Compile the SCSS to CSS in the terminal, this starts Sass-code and works automatically in the browser 
+    // sass main.scss main.css
+
+// Powerful concepts
+  // Nesting: child selectors and properties in the scope of a parent selector, possibilty to create DOM relationships and avoid repetition.
+  // Variables: color, numbers, strings, booleans, and null, Sass has also lists and maps.
+
+    */
+/* 
+
+Project to write CSS shorter (into SCSS)
+so called 'refactoring'
+
+use:
+- css-selectors
+- scss-nesting
+- scss-variables
+
+step  refactoring: paste contents of style.css into style.scss
+step  set colors as variables
+step  nestling: use the DOM as hierarchy
+      -> therefore take the outermost element make this the parent and nestle .nav and .main inside it
+      -> nestle all the .main and .nav selectors, in .main en .nav (and remove .main en .nav)
+      -> reorganize lu li accordingly as in the html  
+      -> check to create for more possible variables
+        -> use the syntax for direct child (descendance), for example:  > * {padding-left: 50px}
+*/
+
+
